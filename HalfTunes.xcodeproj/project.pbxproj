@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2048F95C1D07F15600FC1D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048F95B1D07F15600FC1D72 /* AppDelegate.swift */; };
-		2048F95E1D07F15600FC1D72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048F95D1D07F15600FC1D72 /* ViewController.swift */; };
+		2048F95E1D07F15600FC1D72 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048F95D1D07F15600FC1D72 /* SearchViewController.swift */; };
 		2048F9611D07F15600FC1D72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2048F95F1D07F15600FC1D72 /* Main.storyboard */; };
 		2048F9631D07F15600FC1D72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2048F9621D07F15600FC1D72 /* Assets.xcassets */; };
 		2048F9661D07F15600FC1D72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2048F9641D07F15600FC1D72 /* LaunchScreen.storyboard */; };
 		2048F9711D07F15600FC1D72 /* HalfTunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048F9701D07F15600FC1D72 /* HalfTunesTests.swift */; };
 		2048F97C1D07F15600FC1D72 /* HalfTunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048F97B1D07F15600FC1D72 /* HalfTunesUITests.swift */; };
+		2048F98D1D0802AB00FC1D72 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048F98C1D0802AB00FC1D72 /* Track.swift */; };
+		2048F9901D08084A00FC1D72 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048F98F1D08084A00FC1D72 /* TrackCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		2048F9581D07F15600FC1D72 /* HalfTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalfTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2048F95B1D07F15600FC1D72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2048F95D1D07F15600FC1D72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2048F95D1D07F15600FC1D72 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2048F9601D07F15600FC1D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2048F9621D07F15600FC1D72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2048F9651D07F15600FC1D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		2048F9771D07F15600FC1D72 /* HalfTunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTunesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2048F97B1D07F15600FC1D72 /* HalfTunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfTunesUITests.swift; sourceTree = "<group>"; };
 		2048F97D1D07F15600FC1D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2048F98C1D0802AB00FC1D72 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Track.swift; path = "Data Objects/Track.swift"; sourceTree = "<group>"; };
+		2048F98F1D08084A00FC1D72 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackCell.swift; path = Cells/TrackCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		2048F95A1D07F15600FC1D72 /* HalfTunes */ = {
 			isa = PBXGroup;
 			children = (
+				2048F98E1D08081C00FC1D72 /* Cells */,
+				2048F9891D08026E00FC1D72 /* Data Objects */,
 				2048F95B1D07F15600FC1D72 /* AppDelegate.swift */,
-				2048F95D1D07F15600FC1D72 /* ViewController.swift */,
+				2048F95D1D07F15600FC1D72 /* SearchViewController.swift */,
 				2048F95F1D07F15600FC1D72 /* Main.storyboard */,
 				2048F9621D07F15600FC1D72 /* Assets.xcassets */,
 				2048F9641D07F15600FC1D72 /* LaunchScreen.storyboard */,
@@ -123,6 +129,22 @@
 				2048F97D1D07F15600FC1D72 /* Info.plist */,
 			);
 			path = HalfTunesUITests;
+			sourceTree = "<group>";
+		};
+		2048F9891D08026E00FC1D72 /* Data Objects */ = {
+			isa = PBXGroup;
+			children = (
+				2048F98C1D0802AB00FC1D72 /* Track.swift */,
+			);
+			name = "Data Objects";
+			sourceTree = "<group>";
+		};
+		2048F98E1D08081C00FC1D72 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2048F98F1D08084A00FC1D72 /* TrackCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2048F95E1D07F15600FC1D72 /* ViewController.swift in Sources */,
+				2048F95E1D07F15600FC1D72 /* SearchViewController.swift in Sources */,
 				2048F95C1D07F15600FC1D72 /* AppDelegate.swift in Sources */,
+				2048F98D1D0802AB00FC1D72 /* Track.swift in Sources */,
+				2048F9901D08084A00FC1D72 /* TrackCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +425,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HalfTunes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Evan.HalfTunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,7 +438,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HalfTunes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Evan.HalfTunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
