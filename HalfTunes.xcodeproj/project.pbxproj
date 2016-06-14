@@ -16,6 +16,7 @@
 		2048F97C1D07F15600FC1D72 /* HalfTunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048F97B1D07F15600FC1D72 /* HalfTunesUITests.swift */; };
 		2048F98D1D0802AB00FC1D72 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048F98C1D0802AB00FC1D72 /* Track.swift */; };
 		2048F9901D08084A00FC1D72 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048F98F1D08084A00FC1D72 /* TrackCell.swift */; };
+		209CAB3A1D0FCB1600CACFA9 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209CAB391D0FCB1600CACFA9 /* Download.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2048F97D1D07F15600FC1D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2048F98C1D0802AB00FC1D72 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Track.swift; path = "Data Objects/Track.swift"; sourceTree = "<group>"; };
 		2048F98F1D08084A00FC1D72 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackCell.swift; path = Cells/TrackCell.swift; sourceTree = "<group>"; };
+		209CAB391D0FCB1600CACFA9 /* Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				2048F9891D08026E00FC1D72 /* Data Objects */,
 				2048F95B1D07F15600FC1D72 /* AppDelegate.swift */,
 				2048F95D1D07F15600FC1D72 /* SearchViewController.swift */,
+				209CAB391D0FCB1600CACFA9 /* Download.swift */,
 				2048F95F1D07F15600FC1D72 /* Main.storyboard */,
 				2048F9621D07F15600FC1D72 /* Assets.xcassets */,
 				2048F9641D07F15600FC1D72 /* LaunchScreen.storyboard */,
@@ -282,6 +285,7 @@
 				2048F95C1D07F15600FC1D72 /* AppDelegate.swift in Sources */,
 				2048F98D1D0802AB00FC1D72 /* Track.swift in Sources */,
 				2048F9901D08084A00FC1D72 /* TrackCell.swift in Sources */,
+				209CAB3A1D0FCB1600CACFA9 /* Download.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +516,7 @@
 				2048F9821D07F15600FC1D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2048F9831D07F15600FC1D72 /* Build configuration list for PBXNativeTarget "HalfTunesTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +525,7 @@
 				2048F9851D07F15600FC1D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2048F9861D07F15600FC1D72 /* Build configuration list for PBXNativeTarget "HalfTunesUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +534,7 @@
 				2048F9881D07F15600FC1D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

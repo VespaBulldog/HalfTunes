@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackCell" rowHeight="62" id="JnC-0U-nO2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackCell" rowHeight="62" id="JnC-0U-nO2" customClass="TrackCell" customModule="HalfTunes" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JnC-0U-nO2" id="QoV-8D-IlB">
@@ -56,6 +56,9 @@
                                                         <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                                         <color key="titleShadowColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="cancelTapped:" destination="JnC-0U-nO2" eventType="touchUpInside" id="dKL-QP-fuf"/>
+                                                    </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4va-iP-jmA">
                                                     <rect key="frame" x="494" y="9" width="42" height="30"/>
@@ -63,6 +66,9 @@
                                                         <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                                         <color key="titleShadowColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="pauseOrResumeTapped:" destination="JnC-0U-nO2" eventType="touchUpInside" id="sMl-fO-f54"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivd-07-AXc">
                                                     <rect key="frame" x="514" y="9" width="69" height="30"/>
@@ -71,6 +77,9 @@
                                                         <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                                         <color key="titleShadowColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="downloadTapped:" destination="JnC-0U-nO2" eventType="touchUpInside" id="t3l-Pe-CjT"/>
+                                                    </connections>
                                                 </button>
                                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100% of 1.35MB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oL-Xh-pUI">
                                                     <rect key="frame" x="507" y="48" width="84" height="14"/>
@@ -102,6 +111,15 @@
                                                 <constraint firstAttribute="trailing" secondItem="9kK-5B-8Ug" secondAttribute="trailing" constant="102" id="xho-Dg-lNt"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="artistLabel" destination="9kK-5B-8Ug" id="Gpw-55-eWH"/>
+                                            <outlet property="cancelButton" destination="SUZ-3S-yqb" id="Feq-zJ-RjT"/>
+                                            <outlet property="downloadButton" destination="ivd-07-AXc" id="xQf-cf-4oe"/>
+                                            <outlet property="pauseButton" destination="4va-iP-jmA" id="pOP-Cz-UsC"/>
+                                            <outlet property="progressLabel" destination="6oL-Xh-pUI" id="YIo-Ps-6FE"/>
+                                            <outlet property="progressView" destination="S1s-qV-8KB" id="Bej-15-Ss7"/>
+                                            <outlet property="titleLabel" destination="e3O-Uc-Jcn" id="huI-vG-zmk"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
